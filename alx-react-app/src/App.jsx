@@ -1,15 +1,16 @@
-import React from "react";
-import UserProfile from "./components/UserProfile";
+import React from 'react';
+import Header from './Header';
+import MainContent from './MainContent';
+import Footer from './Footer';
 
-function App() {
+const App = () => {
   return (
     <div>
-      <h1>User Profiles</h1>
-      <UserProfile name="Alice" age={25} bio="Loves hiking and photography" />
-      <UserProfile name="Bob" age={30} bio="Enjoys cooking and traveling" />
-      <UserProfile name="Clara" age={22} bio="Avid reader and musician" />
+      <Header />
+      <MainContent />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
