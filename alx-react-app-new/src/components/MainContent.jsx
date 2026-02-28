@@ -11,11 +11,8 @@ function MainContent() {
         textAlign: "center",
       }}
     >
-      <h2 style={{ color: "#003366" }}>
-        Welcome to My Favorite Cities App
-      </h2>
-      <p style={{ fontSize: "16px" }}>
-        Explore different cities and learn more about them.
+      <p style={{ fontSize: "18px", color: "#333" }}>
+        I love to visit New York, Paris, and Tokyo.
       </p>
     </main>
   );
