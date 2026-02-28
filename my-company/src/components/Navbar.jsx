@@ -5,7 +5,13 @@ function Navbar() {
     backgroundColor: '#333',
     padding: '15px',
     display: 'flex',
-    gap: '20px'
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  };
+
+   const linkContainer = {
+    display: 'flex',
+    gap: '20px',
   };
 
   const linkStyle = {
@@ -16,10 +22,16 @@ function Navbar() {
 
   return (
     <nav style={navStyle}>
+     <div  style={{ color: 'white', fontWeight: 'bold' }}>
+        MyCompany   
+     </div>   
+
+     <div style={linkContainer}>
       <Link to="/" style={linkStyle}>Home</Link>
       <Link to="/about" style={linkStyle}>About</Link>
       <Link to="/services" style={linkStyle}>Services</Link>
       <Link to="/contact" style={linkStyle}>Contact</Link>
+     </div>
     </nav>
   );
 }
