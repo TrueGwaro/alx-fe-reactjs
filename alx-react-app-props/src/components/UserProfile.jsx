@@ -1,14 +1,15 @@
-import React from "react";
+import { useContext } from 'react';
+import UserContext from '../UserContext';
 
-// Functional component that receives props
-const UserProfile = (props) => {
+function UserDetails() {
+  const userData = useContext(UserContext);
+
   return (
-    <div style={{ border: "1px solid #ccc", padding: "16px", width: "250px", borderRadius: "8px", margin: "10px" }}>
-      <h2>{props.name}</h2>
-      <p>Age: {props.age}</p>
-      <p>Bio: {props.bio}</p>
+    <div>
+      <p>Name: {userData.name}</p>
+      <p>Email: {userData.email}</p>
     </div>
   );
-};
+}
 
 export default UserProfile;
