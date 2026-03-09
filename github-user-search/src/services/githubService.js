@@ -1,6 +1,8 @@
+// src/services/githubService.js
 import axios from "axios";
 
-export const searchUsers = async (username, location, minRepos, page = 1) => {
+// Rename to exactly what ALX expects
+export const fetchUserData = async (username, location, minRepos, page = 1) => {
   let query = username ? `${username}` : "";
 
   if (location) {
